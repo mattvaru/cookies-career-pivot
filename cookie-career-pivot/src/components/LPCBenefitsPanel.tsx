@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Lightbulb, Heart, MapPin, Users } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Lightbulb } from "lucide-react";
 import type { State } from "@/types";
 
 interface LPCBenefitsPanelProps {
