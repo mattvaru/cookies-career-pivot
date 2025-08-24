@@ -1,4 +1,4 @@
-export type State = "CA" | "VA" | "OK";
+export type State = "CA" | "VA" | "OK" | "SC";
 export type LicenseType = "LMFT" | "LPC" | "LPCC" | "LCSW";
 
 export interface Country {

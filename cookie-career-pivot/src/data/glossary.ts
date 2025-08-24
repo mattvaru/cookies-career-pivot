@@ -19,5 +19,15 @@ export const glossary: Record<string, string> = {
   "CACREP": "Accreditation body for counseling programs. Ensures programs meet national standards.",
   "CSWE": "Council on Social Work Education. Accredits MSW programs.",
   "MSW": "Master of Social Work. A graduate degree that prepares students for clinical social work practice, leading to LCSW licensure.",
-  "Face-to-Face": "Direct interaction with clients (in-person or telehealth). Distinct from paperwork, training, or supervision time."
+  "Face-to-Face": "Direct interaction with clients (in-person or telehealth). Distinct from paperwork, training, or supervision time.",
+  "ALC": "Associate Licensed Counselor. South Carolina's provisional license for LPC candidates completing supervised hours post-graduation.",
+  "Associate MFT": "South Carolina's associate-level title for LMFT candidates completing supervised clinical hours before full licensure.",
+  "LISW-Associate": "South Carolina's provisional title for social workers completing supervised hours toward LISW-CP licensure.",
+  "LISW-CP": "Licensed Independent Social Worker – Clinical Practice. South Carolina's title for independently practicing clinical social workers (equivalent to LCSW in other states).",
+  "NCE": "National Counselor Examination. A 200-item standardized exam by NBCC assessing counseling knowledge and skills, required for LPC licensure in most states.",
+  "AMFTRB Exam": "The national MFT licensing examination developed by the Association of Marital and Family Therapy Regulatory Boards, required in most states except California.",
+  "NCMHCE": "National Clinical Mental Health Counseling Examination. A case-based exam by NBCC testing clinical problem-solving skills, alternative to NCE in some states.",
+  "ASWB Clinical": "The clinical-level social work licensing exam by the Association of Social Work Boards, required for independent clinical practice (LCSW/LISW-CP).",
+  "LPC-S": "Licensed Professional Counselor-Supervisor. An advanced credential allowing LPCs to provide supervision to associate-level counselors.",
+  "COAMFTE": "Commission on Accreditation for Marriage and Family Therapy Education. The specialized accrediting body for MFT graduate programs, ensuring quality standards in marriage and family therapy education."
 };

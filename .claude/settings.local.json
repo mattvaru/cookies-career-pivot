@@ -13,7 +13,11 @@
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
       "Bash(git add:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebFetch(domain:cookiespivot.com)",
+      "WebSearch",
+      "Bash(open http://localhost:5173/)",
+      "Bash(open \"http://localhost:5173/?cache=false\")"
     ],
     "deny": [],
     "ask": []

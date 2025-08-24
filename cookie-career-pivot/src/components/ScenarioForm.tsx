@@ -7,6 +7,7 @@ import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
 import type { ScenarioInput, State, LicenseType } from "@/types";
 import { Calendar, MapPin, Briefcase, GraduationCap, Clock, Plane } from "lucide-react";
+import { CounselingCompactPanel } from "./CounselingCompactPanel";
 
 interface ScenarioFormProps {
   onSubmit: (input: ScenarioInput) => void;
@@ -60,6 +61,7 @@ export function ScenarioForm({ onSubmit }: ScenarioFormProps) {
                   <SelectItem value="CA">California</SelectItem>
                   <SelectItem value="VA">Virginia</SelectItem>
                   <SelectItem value="OK">Oklahoma</SelectItem>
+                  <SelectItem value="SC">South Carolina</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -85,6 +87,8 @@ export function ScenarioForm({ onSubmit }: ScenarioFormProps) {
               </Select>
             </div>
           </div>
+
+          <CounselingCompactPanel state={formData.state} licenseType={formData.license} />
 
           <div className="space-y-3 p-4 bg-sky-50 rounded-lg border border-sky-200">
             <Label className="text-sm font-semibold flex items-center gap-2">

@@ -87,5 +87,31 @@ export const graduatePrograms: Record<State, GraduateProgram[]> = {
       duration: "~2 years (standard MA timeline)",
       whyGreat: "Great if you want an **affordable, CACREP-accredited counseling program** while staying based in Oklahoma."
     }
+  ],
+  SC: [
+    {
+      school: "University of South Carolina (USC)",
+      schoolUrl: "https://sc.edu/study/colleges_schools/socialwork/study/msw/index.php",
+      program: "Master of Social Work (LCSW path)",
+      remote: "Online or In-Person",
+      duration: "Full-time 2 years; Extended-time 3 years; Advanced Standing ~11 months (summer start)",
+      whyGreat: "Great if you want a **flexible MSW** — you can do the coursework fully online while abroad, then return for U.S. practicum. Multiple pacing options keep you in control."
+    },
+    {
+      school: "Winthrop University",
+      schoolUrl: "https://online.winthrop.edu/msw/",
+      program: "Online Master of Social Work (LCSW path)",
+      remote: "100% Online coursework (practicum in-person)",
+      duration: "Traditional (60 cr) part-time ~3 years; Advanced Standing (39 cr) ~2 years",
+      whyGreat: "Great if you want a **travel-friendly MSW** designed for remote learners. Lets you progress while you're abroad, with practicum arranged when you're back."
+    },
+    {
+      school: "Converse University",
+      schoolUrl: "https://www.converse.edu/program/mmft/",
+      program: "Master of Marriage & Family Therapy (LMFT) – COAMFTE Accredited",
+      remote: "In-Person (Spartanburg/Greenville)",
+      duration: "63 credits (~2 years full-time); Fall start only",
+      whyGreat: "Great if you want to be an **LMFT** in South Carolina. This is the **only COAMFTE-accredited MFT program in SC**, making your degree highly portable across states."
+    }
   ]
 };

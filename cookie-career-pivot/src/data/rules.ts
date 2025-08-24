@@ -102,6 +102,40 @@ export const licenseRules: Record<State, Record<LicenseType, LicenseRequirements
       associateTitle: "LPC Candidate",
       examRequirements: ["NCE", "Oklahoma Jurisprudence"]
     }
+  },
+  SC: {
+    LPC: {
+      totalHours: 3000,
+      directHours: 1500,
+      supervisionHours: 150,
+      minWeeks: 104,
+      associateTitle: "ALC",
+      examRequirements: ["NCE"]
+    },
+    LMFT: {
+      totalHours: 1500,
+      directHours: 1500,
+      supervisionHours: 200,
+      minWeeks: 104,
+      associateTitle: "Associate MFT",
+      examRequirements: ["AMFTRB Exam"]
+    },
+    LCSW: {
+      totalHours: 3000,
+      directHours: 1800,
+      supervisionHours: 100,
+      minWeeks: 104,
+      associateTitle: "LISW-Associate",
+      examRequirements: ["ASWB Clinical"]
+    },
+    LPCC: {
+      totalHours: 3000,
+      directHours: 1500,
+      supervisionHours: 150,
+      minWeeks: 104,
+      associateTitle: "ALC",
+      examRequirements: ["NCE"]
+    }
   }
 };
 

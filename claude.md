@@ -26,7 +26,7 @@ The app then produces **timelines, calendars, and milestone ages** so Cookie see
 ---
 
 ## 🧩 Input Parameters
-- **State**: `"CA" | "VA" | "OK"`
+- **State**: `"CA" | "VA" | "OK" | "SC"`
 - **License**: `"LMFT" | "LPC" | "LPCC" | "LCSW"`
 - **Birthdate**: default `"2000-03-23"` (age 25 in 2025)
 - **FinishSonography**: default `"2026-05-08"`
@@ -59,6 +59,14 @@ The app then produces **timelines, calendars, and milestone ages** so Cookie see
 - LMFT: **~3,000 hrs** (assume couples/family emphasis required)
 - LCSW: **4,000 hrs**, **≥3,000 direct**, **≥100 supervision**
 - Associate titles: LPC Candidate / LMFT Candidate / LCSW Supervisee
+
+### South Carolina (SC)
+- LPC: **3,000 hrs** total, **≥1,500 direct client**, **150 supervision hrs**
+- LMFT: **1,500 direct hrs** (≥500 couples/families), **200 supervision hrs**
+- LCSW (LISW-CP): **3,000 hrs** clinical practice, **≥100 supervision**
+- Associate titles: ALC (Associate Licensed Counselor) / Associate MFT / LISW-Associate
+- Minimum 2 years post-master's for all licenses
+- Counseling Compact member state
 
 ### Graduate Program Fieldwork
 - CACREP (counseling): Practicum 100 hrs (40 direct), Internship 600 hrs (240 direct)
