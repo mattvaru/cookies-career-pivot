@@ -19,6 +19,7 @@ export function ScenarioForm({ onSubmit }: ScenarioFormProps) {
     birthdate: new Date("2000-03-23"),
     finishSonography: new Date("2026-05-08"),
     travelMonths: 6,
+    travelCountries: [],
     workAsSonographer: false,
     workMonths: 0,
     programLength: 24,

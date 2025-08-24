@@ -1,12 +1,19 @@
 export type State = "CA" | "VA" | "OK";
 export type LicenseType = "LMFT" | "LPC" | "LPCC" | "LCSW";
 
+export interface Country {
+  code: string;
+  name: string;
+  flag: string;
+}
+
 export interface ScenarioInput {
   state: State;
   license: LicenseType;
   birthdate: Date;
   finishSonography: Date;
   travelMonths: number;
+  travelCountries: Country[];
   workAsSonographer: boolean;
   workMonths: number;
   programLength: number;

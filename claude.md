@@ -169,3 +169,58 @@ These terms should be stored in a JSON/dictionary and automatically displayed as
 - Rules in `rules.ts`
 - Timeline logic in `timeline.ts`
 - Glossary data in `glossary.ts` (JSON of terms + definitions; used by `<TooltipGlossary />`)
+
+
+---
+
+## 🎓 Graduate Program Options by State (with Program Lengths)
+
+To become a therapist, you’ll need a **master’s degree in counseling or social work**.  
+Here are three excellent, accredited options in each state you’re considering (California, Virginia, Oklahoma).  
+
+I’ve included:  
+- **Links** to official program sites  
+- **Estimated durations** (real data from each program)  
+- **Remote availability**  
+- And why each might be a good fit for you
+
+---
+
+### 🌴 California (LMFT / LPCC / LCSW)
+
+| School | Program / Path | Remote? | Duration | Why it’s great for you (Cookie!) |
+|---|---|---|---|---|
+| [Pepperdine University (GSEP)](https://www.pepperdine.edu/academics/graduate-school-education-psychology/academics/ma-psychology/) | M.A. Clinical Psychology (LMFT emphasis; LPCC eligible) | Online coursework + local practicum | **~2 years (full-time)** | Great if you want **flexibility** and the option to pursue LMFT or LPCC in California, without worrying about missing CA-specific coursework. |
+| [CSU Northridge (CSUN)](https://tsengcollege.csun.edu/programs/MSW) | Master of Social Work (LCSW path) | Fully online | **2 years (full-time)** or **3 years (part-time)** | Perfect if you want a **CSWE-accredited social work degree** at a state-school price, while studying fully online. |
+| [Palo Alto University (PAU)](https://www.paloaltou.edu/academic-programs/ma-counseling) | M.A. Counseling (CACREP) → LPCC/LMFT | Online/hybrid | **~2 years and 3 months (9 quarters)** | Great if you want a **CACREP-accredited counseling program** (portable to other states) while still being California-aligned. |
+
+---
+
+### 🌲 Virginia (LPC / LMFT / LCSW)
+
+| School | Program / Path | Remote? | Duration | Why it’s great for you (Cookie!) |
+|---|---|---|---|---|
+| [William & Mary](https://counseling.education.wm.edu/online-programs/masters-of-ed-clinical-mental-health) | M.Ed. Clinical Mental Health Counseling (LPC) | Online | **~3 years (part-time)** | Great if you want a **prestigious Virginia program** with CACREP accreditation, designed to be paced sustainably. |
+| [VCU](https://onlinesocialwork.vcu.edu/) | Master of Social Work (LCSW path) | Online option | **16 months–2 years (FT)** or **3–4 years (PT)** | Great if you want a **flexible CSWE-accredited MSW** that you can complete on either a fast track or part-time path. |
+| [Liberty University](https://www.liberty.edu/online/behavioral-sciences/masters/clinical-mental-health-counseling/) | M.A. Clinical Mental Health Counseling (LPC) | Fully online | **~3 years (60 credits)** | Great if you want **maximum flexibility** (study anywhere online) and to handle practicum once you’re back stateside. |
+
+---
+
+### 🌾 Oklahoma (LPC / LMFT / LCSW)
+
+| School | Program / Path | Remote? | Duration | Why it’s great for you (Cookie!) |
+|---|---|---|---|---|
+| [University of Oklahoma (OU Online)](https://online.ou.edu/program/master-of-social-work/) | Master of Social Work (LCSW path) | Fully online | **~15–30 months**, depending on track (advanced standing or traditional) | Great if you want a **fast, fully online CSWE-accredited MSW** with options to speed up if eligible. |
+| [Oklahoma State University (OSU)](https://go.okstate.edu/graduate-academics/programs/masters/counseling-ms.html) | M.S. in Counseling – Mental Health (LPC) | Campus-based (Stillwater/Tulsa) | **~2–3 years (60 credits)** | Great if you want to **build Oklahoma roots and get in-person mentorship** while completing a CACREP-accredited LPC program. |
+| [Southeastern Oklahoma State University (SOSU)](https://www.se.edu/psychology/graduate-programs/ma-clinical-mental-health-counseling/) | M.A. Clinical Mental Health Counseling (LPC) | Primarily campus-based (Durant) | **~2 years (standard MA timeline)** | Great if you want an **affordable, CACREP-accredited counseling program** while staying based in Oklahoma. |
+
+---
+
+### 📝 Key Notes
+- **Remote vs. practicum:** Coursework may be online, but **practicum/internship must be supervised in the state where you want licensure.**  
+- **California quirks:** If you study outside CA but want to license there, you may need extra **CA-specific courses** (law & ethics, domestic violence, aging). Going with a CA program avoids this.  
+- **Accreditation shorthand:**  
+  - **CACREP** = gold standard for counseling (LPC/LMFT/LPCC)  
+  - **CSWE** = gold standard for social work (MSW/LCSW)  
+
+---

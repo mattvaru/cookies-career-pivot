@@ -18,5 +18,6 @@ export const glossary: Record<string, string> = {
   "Social Work Compact": "An interstate licensing compact for LCSWs. Expanding across states.",
   "CACREP": "Accreditation body for counseling programs. Ensures programs meet national standards.",
   "CSWE": "Council on Social Work Education. Accredits MSW programs.",
+  "MSW": "Master of Social Work. A graduate degree that prepares students for clinical social work practice, leading to LCSW licensure.",
   "Face-to-Face": "Direct interaction with clients (in-person or telehealth). Distinct from paperwork, training, or supervision time."
 };

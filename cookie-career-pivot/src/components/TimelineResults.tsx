@@ -1,13 +1,19 @@
 import { format } from "date-fns";
 import type { ScenarioResult } from "@/types";
+import { GlossaryTooltip } from "@/components/GlossaryTooltip";
+import { TimelineCalendar } from "@/components/TimelineCalendar";
+import { ProgramTable } from "@/components/ProgramTable";
+import { licenseRules } from "@/data/rules";
+import { getStateName } from "@/data/states";
 
 interface TimelineResultsProps {
   result: ScenarioResult;
   onReset: () => void;
+  onCompare: () => void;
 }
 
-export function TimelineResults({ result, onReset }: TimelineResultsProps) {
-  const { phases, milestones, ageAtLicense, licenseDate } = result;
+export function TimelineResults({ result, onReset, onCompare }: TimelineResultsProps) {
+  const { phases, milestones, ageAtLicense, licenseDate, input } = result;
   
   const keyMilestones = milestones.filter(m => 
     m.label.includes("Graduate") || 
@@ -15,11 +21,13 @@ export function TimelineResults({ result, onReset }: TimelineResultsProps) {
     m.label.includes("Start Master")
   );
 
+  const stateRules = licenseRules[input.state]?.[input.license];
+
   return (
     <div className="max-w-4xl mx-auto">
       <div className="mb-8 flex items-center justify-between">
         <h1 className="text-4xl font-bold text-gray-900">
-          Your Timeline
+          Cookie's Timeline ({input.license}, {getStateName(input.state)})
         </h1>
         <button
           onClick={onReset}
@@ -31,20 +39,44 @@ export function TimelineResults({ result, onReset }: TimelineResultsProps) {
 
       <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed space-y-6">
         <p>
-          Alright Cookie, here's your path mapped out. Take a deep breath — you're going to be 
+          Here's your path mapped out — you're going to be 
           <span className="inline-flex items-center px-3 py-1 mx-1 bg-rose-100 border-2 border-rose-300 rounded-full font-medium text-base">
             {Math.floor(ageAtLicense)} years old
           </span>
-          when you get your license in 
+          when you get your <GlossaryTooltip term={input.license}>{input.license}</GlossaryTooltip> license in 
           <span className="inline-flex items-center px-3 py-1 mx-1 bg-blue-100 border-2 border-blue-300 rounded-full font-medium text-base">
             {format(licenseDate, "MMMM yyyy")}
           </span>.
         </p>
 
-        <p>
-          That means you'll have <strong>decades</strong> of meaningful work ahead of you. 
-          You're not behind — you're right on time.
-        </p>
+
+        {stateRules && (
+          <div className="bg-gray-50 rounded-lg p-6 my-8 border border-gray-200">
+            <h3 className="text-lg font-semibold mb-4 text-gray-800">
+              {getStateName(input.state)} <GlossaryTooltip term={input.license}>{input.license}</GlossaryTooltip> Requirements
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+              <div>
+                <span className="font-medium">Total Hours:</span> {stateRules.totalHours.toLocaleString()}
+              </div>
+              <div>
+                <span className="font-medium"><GlossaryTooltip term="Direct Client Hours">Direct Client Hours</GlossaryTooltip>:</span> {stateRules.directHours.toLocaleString()}
+              </div>
+              <div>
+                <span className="font-medium"><GlossaryTooltip term="Supervision Hours">Supervision Hours</GlossaryTooltip>:</span> {stateRules.supervisionHours.toLocaleString()}
+              </div>
+              <div>
+                <span className="font-medium">Minimum Weeks:</span> {stateRules.minWeeks}
+              </div>
+              <div className="md:col-span-2">
+                <span className="font-medium"><GlossaryTooltip term="Associate">Associate Title</GlossaryTooltip>:</span> {stateRules.associateTitle}
+              </div>
+              <div className="md:col-span-2">
+                <span className="font-medium">Required Exams:</span> {stateRules.examRequirements.join(", ")}
+              </div>
+            </div>
+          </div>
+        )}
 
         <div className="my-12">
           <h2 className="text-2xl font-semibold mb-6">The Journey</h2>
@@ -97,23 +129,44 @@ export function TimelineResults({ result, onReset }: TimelineResultsProps) {
           </div>
         </div>
 
-        <div className="bg-gray-50 rounded-lg p-8 my-12">
-          <h2 className="text-xl font-semibold mb-4">The Bottom Line</h2>
-          <p className="text-lg">
-            Even with all the travel and breathing room you want, you'll be fully licensed 
-            as a therapist before you turn {Math.floor(ageAtLicense) + 1}. That's not late — 
-            that's exactly when you're supposed to be there.
-          </p>
-          <p className="text-gray-600 mt-4">
-            The experiences you gather along the way — travel, work, life — will make you 
-            a better therapist than someone who rushed through. Trust your timeline.
-          </p>
+        <div className="my-12">
+          <TimelineCalendar result={result} />
         </div>
 
-        <div className="text-sm text-gray-500 italic pt-8 border-t border-gray-200">
-          Remember: There's no rush. Your future clients will benefit from everything 
-          you learn along the way.
+        <div className="my-12">
+          <ProgramTable />
         </div>
+
+        <div className="bg-gray-50 rounded-lg p-8 my-12">
+          <h2 className="text-xl font-semibold mb-4">The Bottom Line</h2>
+          <div className="flex items-start gap-6 mb-8">
+            <p className="text-lg flex-1">
+              Even with all the travel and breathing room you want, you'll be fully licensed 
+              as a <GlossaryTooltip term={input.license}>{input.license}</GlossaryTooltip> before you turn {Math.floor(ageAtLicense) + 1}. You're young and you're going to be A-OK -- my friend thinks so too :)
+            </p>
+            <div className="flex-shrink-0">
+              <img 
+                src="/Conclusion Pic.png" 
+                alt="Supportive message" 
+                className="w-48 h-auto rounded-lg shadow-sm"
+              />
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-200 pt-6">
+            <h3 className="text-lg font-semibold mb-3 text-gray-800">Want to explore other paths?</h3>
+            <p className="text-gray-600 mb-4">
+              Compare this timeline with different states, licenses, or travel plans to see which path feels right.
+            </p>
+            <button
+              onClick={onCompare}
+              className="bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors"
+            >
+              Compare Another Scenario →
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
   );

@@ -78,19 +78,28 @@ export function generateTimeline(input: ScenarioInput): ScenarioResult {
   
   if (input.travelMonths > 0) {
     const endDate = addMonths(currentDate, input.travelMonths);
+    const countryList = input.travelCountries.length > 0 
+      ? input.travelCountries.map(c => c.name).join(", ")
+      : "various destinations";
+    
     phases.push({
       type: "travel",
       startDate: new Date(currentDate),
       endDate: endDate,
       label: `Travel Break (${input.travelMonths} months)`,
-      color: phaseColors.travel
+      color: phaseColors.travel,
+      description: input.travelCountries.length > 0 
+        ? `Exploring: ${countryList}` 
+        : undefined
     });
     
     milestones.push({
       date: endDate,
       age: calculateAge(input.birthdate, endDate),
       label: "Return from Travel",
-      description: `Complete ${input.travelMonths} months of travel`,
+      description: input.travelCountries.length > 0 
+        ? `After exploring ${input.travelCountries.map(c => c.flag + " " + c.name).join(", ")}`
+        : `Complete ${input.travelMonths} months of travel`,
       icon: "✈️"
     });
     
