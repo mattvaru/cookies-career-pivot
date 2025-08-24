@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CountrySelect } from "@/components/CountrySelect";
+import { CounselingCompactPanel } from "@/components/CounselingCompactPanel";
 import { stateNames } from "@/data/states";
 import type { ScenarioInput, State, LicenseType } from "@/types";
 
@@ -107,7 +108,8 @@ export function LetterForm({ onSubmit }: LetterFormProps) {
             options={[
               { value: "CA", label: stateNames.CA },
               { value: "VA", label: stateNames.VA },
-              { value: "OK", label: stateNames.OK }
+              { value: "OK", label: stateNames.OK },
+              { value: "SC", label: stateNames.SC }
             ]}
             className="bg-pink-100 border-pink-300"
           />
@@ -125,6 +127,8 @@ export function LetterForm({ onSubmit }: LetterFormProps) {
           />
           {" "}license.
         </div>
+
+        <CounselingCompactPanel state={formData.state} licenseType={formData.license} />
 
         <div className="text-lg">
           After you finish your sonography program in May 2026, let's say you want to take{" "}

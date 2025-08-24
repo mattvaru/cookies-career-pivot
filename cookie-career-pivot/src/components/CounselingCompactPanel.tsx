@@ -8,8 +8,11 @@ interface CounselingCompactPanelProps {
 }
 
 export function CounselingCompactPanel({ state, licenseType }: CounselingCompactPanelProps) {
+  console.log("CounselingCompactPanel - state:", state, "licenseType:", licenseType);
+  
   // Only show for LPC/LPCC license types
   if (licenseType !== "LPC" && licenseType !== "LPCC") {
+    console.log("Not showing panel - wrong license type");
     return null;
   }
 
@@ -31,8 +34,14 @@ export function CounselingCompactPanel({ state, licenseType }: CounselingCompact
               </div>
               
               <div className="text-sm text-emerald-700 space-y-2">
+                <div className="bg-emerald-200 rounded p-2 mb-3 border border-emerald-300">
+                  <p className="text-xs font-medium text-emerald-800">
+                    <strong>What's the Counseling Compact?</strong> An interstate agreement that allows fully licensed LPCs to practice across member states without obtaining separate licenses in each state.
+                  </p>
+                </div>
+                
                 <p>
-                  <strong>Great news!</strong> {state === "VA" ? "Virginia" : state === "OK" ? "Oklahoma" : "South Carolina"} is part of the <strong>Counseling Compact</strong>—an agreement that lets fully licensed LPCs practice in other Compact states without getting a brand-new license each time.
+                  <strong>Great news!</strong> {state === "VA" ? "Virginia" : state === "OK" ? "Oklahoma" : "South Carolina"} is a member state, which means your LPC license will work across all Compact states.
                 </p>
                 
                 <div className="space-y-1">
@@ -70,6 +79,12 @@ export function CounselingCompactPanel({ state, licenseType }: CounselingCompact
               </div>
               
               <div className="text-sm text-blue-700 space-y-2">
+                <div className="bg-blue-200 rounded p-2 mb-3 border border-blue-300">
+                  <p className="text-xs font-medium text-blue-800">
+                    <strong>What's the Counseling Compact?</strong> An interstate agreement that allows fully licensed LPCs to practice across member states without obtaining separate licenses in each state.
+                  </p>
+                </div>
+                
                 <p>
                   California hasn't joined the <strong>Counseling Compact</strong> yet, but there's hope on the horizon.
                 </p>

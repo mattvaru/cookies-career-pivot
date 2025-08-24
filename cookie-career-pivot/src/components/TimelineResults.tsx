@@ -3,6 +3,8 @@ import type { ScenarioResult } from "@/types";
 import { GlossaryTooltip } from "@/components/GlossaryTooltip";
 import { TimelineCalendar } from "@/components/TimelineCalendar";
 import { ProgramTable } from "@/components/ProgramTable";
+import { CounselingCompactExpanded } from "@/components/CounselingCompactExpanded";
+import { LPCBenefitsPanel } from "@/components/LPCBenefitsPanel";
 import { licenseRules } from "@/data/rules";
 import { getStateName } from "@/data/states";
 
@@ -77,6 +79,10 @@ export function TimelineResults({ result, onReset, onCompare }: TimelineResultsP
             </div>
           </div>
         )}
+
+        <CounselingCompactExpanded state={input.state} licenseType={input.license} />
+
+        <LPCBenefitsPanel state={input.state} licenseType={input.license} />
 
         <div className="my-12">
           <h2 className="text-2xl font-semibold mb-6">The Journey</h2>
