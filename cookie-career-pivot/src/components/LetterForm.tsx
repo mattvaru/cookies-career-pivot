@@ -205,9 +205,6 @@ export function LetterForm({ onSubmit }: LetterFormProps) {
           </button>
         </div>
 
-        <div className="mt-8 text-sm text-gray-500 italic">
-          P.S. — You're going to be just fine. Trust the process.
-        </div>
       </div>
     </div>
   );
