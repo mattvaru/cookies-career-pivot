@@ -1,0 +1,22 @@
+export const glossary: Record<string, string> = {
+  "LMFT": "Licensed Marriage & Family Therapist. A master's-level therapist specializing in couples, family, and relationship therapy.",
+  "LPC": "Licensed Professional Counselor. A master's-level counselor focused on individuals and groups; known as LPCC in California.",
+  "LPCC": "Licensed Professional Clinical Counselor. California's title for LPC.",
+  "LCSW": "Licensed Clinical Social Worker. A master's-level therapist with social work training, often employed in hospitals, agencies, and private practice.",
+  "Associate": "Post-graduate pre-license title (e.g., AMFT, APCC, ASW, LPC Candidate). Allows supervised practice before full licensure.",
+  "Residency": "Virginia's term for the supervised practice period (same concept as 'associate' in California).",
+  "AMFT": "Associate Marriage & Family Therapist. California's title for LMFT trainees post-graduation.",
+  "APCC": "Associate Professional Clinical Counselor. California's title for LPCC trainees post-graduation.",
+  "ASW": "Associate Social Worker. California's title for LCSW trainees post-graduation.",
+  "Direct Client Hours": "Time spent face-to-face with clients in therapy, counseling, or assessment sessions. Required minimums vary by state/license.",
+  "Supervision Hours": "Regular meetings with a licensed supervisor to review cases, ethics, and progress during residency/associate period.",
+  "Practicum": "Shorter field placement (100 hrs) early in master's programs, usually during the first year.",
+  "Internship": "Longer clinical fieldwork (600+ hrs) later in master's programs, often during the second year.",
+  "Law & Ethics Exam": "California-specific exam that must be passed during the associate period before taking the clinical exam.",
+  "Clinical Exam": "The national/state licensing exam taken after supervised hours are complete (e.g., LMFT Clinical, NCMHCE, ASWB Clinical, AMFTRB).",
+  "Counseling Compact": "An interstate licensing compact for LPCs/LPCCs. Allows practice across member states without relicensing.",
+  "Social Work Compact": "An interstate licensing compact for LCSWs. Expanding across states.",
+  "CACREP": "Accreditation body for counseling programs. Ensures programs meet national standards.",
+  "CSWE": "Council on Social Work Education. Accredits MSW programs.",
+  "Face-to-Face": "Direct interaction with clients (in-person or telehealth). Distinct from paperwork, training, or supervision time."
+};
